@@ -1,0 +1,33 @@
+{
+  "name": "jwtokens",
+  "version": "1.0.0",
+  "description": "app node.js with autho jwt/middlware autorisation",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mrakotomanana/jwtokens.git"
+  },
+  "keywords": [
+    "node",
+    "token",
+    "jwt"
+  ],
+  "author": "Michel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrakotomanana/jwtokens/issues"
+  },
+  "homepage": "https://github.com/mrakotomanana/jwtokens#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.4",
+    "sequelize": "^6.37.5"
+  }
+}
