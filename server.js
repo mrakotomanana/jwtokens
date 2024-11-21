@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const https = require('https');
+const path = require('path');
 
 const fs = require('fs');
 
@@ -19,6 +20,7 @@ const credentials = { key: privateKey, cert: certificate };
 app.use(cors(optionsCors));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res) => {
     res.json({ message: "Bienvenue dans l'application TP 10: Jetons JWT" });
