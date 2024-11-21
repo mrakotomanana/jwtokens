@@ -12,7 +12,7 @@ const app = express();
 const optionsCors = {
     origin: "http://localhost:3000"
 };
-
+//https://cours-info.iut-bm.univ-fcomte.fr/upload/supports/S3/web/cot%20serveur/tp10_end.pdf
 const privateKey = fs.readFileSync('./certs/certificat.key', 'utf8');
 const certificate = fs.readFileSync('./certs/certificat.crt', 'utf8');
 const credentials = { key: privateKey, cert: certificate };
