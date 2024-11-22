@@ -1,0 +1,27 @@
+/* Fichier : main.css */
+
+/* Style pour que le footer soit toujours en bas */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    /* Utilisation de Flexbox pour la mise en page */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Prend toute la hauteur de la page */
+}
+
+/* Style pour que main prenne toute la hauteur possible */
+main {
+    flex: 1; /* Occupe l'espace restant entre header et footer */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

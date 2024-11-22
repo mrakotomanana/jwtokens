@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head.ejs'); %>
+</head>
+
+<body class="container">
+
+    <%- include('partials/header.ejs'); %>
+
+        <main>
+            <div class="mt-4 p-5 bg-primary text-white rounded">
+                <h1 class="text-center"><%= title %></h1>
+                <h1>This is great</h1>
+                <p>Welcome to templating using EJS</p>
+            </div>
+        </main>
+
+
+        <%- include('partials/footer.ejs'); %>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec Footer Fixe</title>
+    <link rel="stylesheet" href="/styles/mains.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>En-tête de la Page</h1>
+        </header>
+        <main>
+            <p>Voici le contenu principal.</p>
+            <!-- Ajoute plus de contenu pour tester le scrolling -->
+        </main>
+        <footer>
+            <p>Ceci est un footer</p>
+        </footer>
+    </div>
+</body>
+</html>
+
